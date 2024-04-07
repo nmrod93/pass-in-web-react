@@ -1,17 +1,11 @@
-interface MeuBotaoProps {
-  texto: string
-}
-
-function MeuBotao(props: MeuBotaoProps) {
-  return <button className="bg-orange-400">{props.texto}</button>
-}
+import { AttendeeList } from "./components/attendee-list";
+import { Header } from "./components/header";
 
 export function App() {
   return (
-    <div>
-      <MeuBotao texto="Botão 1" />
-      <MeuBotao texto="Botão 2" />
-      <MeuBotao texto="Botão 3" />
+    <div className="max-w-[1216px] mx-auto py-5">
+      <Header />
+      <AttendeeList />
     </div>
   )
 }
